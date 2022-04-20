@@ -26,5 +26,3 @@ jobs:
       run: dotnet restore ./${{ matrix.project }}.csproj
     - name: Build for ${{ matrix.project }}
       run: dotnet build ./${{ matrix.project }}.csproj --no-restore
-    - name: Test
-      run: dotnet test --no-build --verbosity normal
